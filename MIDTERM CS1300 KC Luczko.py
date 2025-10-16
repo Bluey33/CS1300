@@ -40,7 +40,7 @@ newfood=food *.45
 mewserv=service *.2
 newclen=cleanness *.25
 # Store result in variable 'average'
-average = newat+newfood+newclen+mewserv / 4
+average = (newat+newfood+newclen+mewserv) / 4
 print(average)
 # Task 2.3 (8 points): Determine restaurant rating
 if average >=4.0:
@@ -109,7 +109,7 @@ if "milk"  in items:
 # Check if "milk" is in items, find its index, and add to cart
 # Also add its price to cart_total
 # Task 4.2 (4 points): Add "eggs" to cart
-if "milk"  in items:
+if "eggs"  in items:
     Index= items.index("eggs")
     cart.append("eggs")
     cart_total=cart_total + prices[Index]
@@ -140,4 +140,5 @@ print(f"Number of items in cart: {len(cart)} ")
 print(f"Number of total items: {len(items)} ")
 # - Final total (with discount if applicable)
 print(f"Final total without discount: ${cart_total}")
+
 print(f"Final total with discount: ${cart_total2}")
